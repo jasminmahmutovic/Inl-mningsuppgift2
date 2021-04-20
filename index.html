@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="https://kit.fontawesome.com/d7635209ca.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+</head>
+
+<body>
+    <main class="card">
+        <header class="top-section">
+            <section class="headliner">
+            <h3 class="headline"> Asgard </h3>
+            <p class="underline">A cloud based community for you
+            to connect with fellow Asgardians</p>
+        </section>
+            </header>
+        <article>
+        <h1>Sign up to Asgard</h1>
+        <h5>Already have an account? <a href="#">Log in</a></h5>
+        <form action="/action_page.php">
+        <div class="buttons">
+        <input class="google-button" type="submit" value="Sign up with google">
+        <input class="facebook-button" type="submit" value="">
+        <input class="apple-button" type="submit" value="">
+        </div>
+        </form>
+        <p class="middle-text">- OR -</p>
+        
+        <form class="register-user">
+            <label for="fname">Full name</label><br>
+            <input type="text" id="fname" name="fname"><br>
+            <label for="email">Email address</label><br>
+            <input type="text" id="email" name="email"><br>
+            <label for="password">Password</label><br>
+            <input type="password" id="password" name="password"><br>
+            <p class="pwrdstrength">Password strength</p>
+            <div class="strength-bar">
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+            </div>
+            
+            <div class="checkbox-agree">
+            <input type="checkbox" id="checkbox" name="checkbox">
+            <p>By creating account, you agree to accept our
+                <a href="#">Privacy Policy,</a> <a href="#">Terms of Service</a> and
+                <a href="#">Notification settings</a>
+            </p>
+            <br>
+            <input class="createacc-button" type="button" value="Create Account">
+            
+        </div>
+            </form>
+            </article>
+    </main>
+</body>
+</html>

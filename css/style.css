@@ -1,0 +1,248 @@
+/* This section is for removing the browsers rules */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-shadow: 0;
+    font-family: 'Roboto', sans-serif;
+}
+
+
+/* This is the top section part */
+
+.top-section {
+    background-color: rgb(250, 241, 233);
+    background-image:url(/images/headerimage.png);
+    background-size:contain;
+    display:flex;
+    justify-content: center;
+    height:9em;
+}
+
+.headline {
+    margin-top:0.5em;
+    font-weight:bold;
+}
+
+.underline {
+    text-indent: -9999px;
+    color:rgb(240, 227, 227);
+}
+
+/* This article contains some text and Log in option */
+
+article {
+    margin:auto;
+    width:90%;
+}
+
+article h1, h5  {
+    margin-top: 1em;
+}
+
+article h5, a {
+    text-decoration: none;
+    font-weight: normal;
+}
+
+/* Section with social-registration buttons */
+
+.buttons {
+    margin-top:2em;
+    height:2.5em;
+    display:grid;
+    grid-template-columns: auto auto auto;
+}
+
+/*---Google button---*/
+
+.google-button {
+    padding-left:1em;
+    border:0.5px solid lightgrey;
+    border-radius:4px;
+    background-color:white;
+    background-image:url(/images/googleicon.png);
+    background-repeat:no-repeat;
+    background-size:10%;
+    background-position: center;
+    background-position-x: 5%;
+    font-weight:bold;
+    transition: background-color 0.3s ease-out 5ms
+}
+
+/*--Facebook button--*/
+
+.facebook-button {
+    margin-left:1em;
+    background-color:rgb(250, 241, 241);
+    border:none;
+    border-radius:4px;
+    background-image:url(/images/facebook.png);
+    background-repeat:no-repeat;
+    background-size:20px;
+    background-position: center;
+    transition: background-color 0.3s ease-out 5ms
+}
+
+/*--Apple button--*/
+
+.apple-button {
+    margin-left:1em;
+    background-color:rgb(250, 241, 241);
+    border:none;
+    border-radius:4px;
+    background-image:url(/images/apple.png);
+    background-repeat:no-repeat;
+    background-size:25px;
+    background-position: center;
+    transition: background-color 0.3s ease-out 5ms
+}
+
+/* The hover effect on the buttons */
+
+.google-button:hover,
+.apple-button:hover,
+.facebook-button:hover {
+    background-color:rgba(163, 163, 62, 0.623);
+}
+
+/* The middle text "-or-" */
+.middle-text {
+    margin-top:1em;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    color:rgb(109, 103, 103);
+    font-size:0.9rem;
+}
+
+/* The register form */
+
+.register-user {
+    display:grid;
+    grid-template-rows: auto auto auto auto;
+    font-size:0.8rem;
+    color:rgb(109, 103, 103);
+}
+
+input[type=text], input[type=password]  {
+    border:none;
+    border-bottom:1px solid lightgrey;
+}
+
+#password {
+    background-image:url(/images/password-eye.png);
+    background-repeat:no-repeat;
+    background-size:20px;
+    background-position: right;
+}
+
+/* The password strength bar*/
+
+.pwrdstrength {
+    color:black;
+}
+
+.strength-bar {
+    margin-top:1em;
+    width:100%;
+    display:grid;
+    grid-template-columns: auto auto auto auto;
+}
+
+.strength-bar div {
+    width:95%;
+    height:0.2em;
+    background-color:green;
+    border-radius:5px;
+}
+
+.strength-bar div:nth-of-type(4) {
+    background-color:rgb(204, 189, 189);
+}
+
+/* Checkbox */
+
+.checkbox-agree {
+    margin-top:1em;
+    display:grid;
+    grid-template-columns: auto auto;
+    column-gap: 0.5em;
+}
+
+/*--The last button on the page--*/
+
+.createacc-button {
+    margin:auto;
+    margin-top:2em;
+    margin-bottom:2em;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    width: 90%;
+    height:3em;
+    background-color: orangered;
+    color:white;
+    font-weight: bold;
+    border-style:hidden;
+    border-radius: 4px;
+    transition: background-color 0.3s ease-out 5ms
+}
+
+/* The hover effect on the create button */
+
+.createacc-button:hover {
+    background-color: rgb(247, 130, 88);
+}
+
+
+/* Creating some responsiveness to bigger screens */
+
+@media only screen and (min-width: 450px) {
+
+    .card {
+        height:100vh;
+        display:grid;
+        grid-template-columns: 35% 65%;
+    }
+    
+    .top-section {
+        background-color: rgb(250, 241, 233);
+        background-image:url(/images/headerimage.png);
+        background-size:cover;
+        background-repeat:none;
+        display:flex;
+        justify-content: center;
+        height:100%;
+    }
+
+    .headliner {
+        margin-left: 1.5em;
+    }
+
+    .underline {
+        text-indent:0px;
+        font-size:0.8rem;
+    }
+
+    .middle-text {
+        width:50%;
+    }
+
+    .register-user {
+        width:50%;
+        justify-content: center;
+        align-items: center;
+    }
+    
+}
+
+@media only screen and (min-width: 800px) {
+.buttons {
+    width:50%;
+}
+
+.headliner {
+    width:100%;
+}
+}
