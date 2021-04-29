@@ -5,6 +5,7 @@
     padding: 0;
     box-shadow: 0;
     font-family: 'Roboto', sans-serif;
+    font-weight: bold;
 }
 
 
@@ -21,7 +22,6 @@
 
 .headline {
     margin-top:0.5em;
-    font-weight:bold;
 }
 
 .underline {
@@ -30,6 +30,10 @@
 }
 
 /* This article contains some text and Log in option */
+
+.lang {
+    display:none;
+}
 
 article {
     margin:auto;
@@ -66,7 +70,6 @@ article h5, a {
     background-size:10%;
     background-position: center;
     background-position-x: 5%;
-    font-weight:bold;
     transition: background-color 0.3s ease-out 5ms
 }
 
@@ -183,7 +186,6 @@ input[type=text], input[type=password]  {
     height:3em;
     background-color: orangered;
     color:white;
-    font-weight: bold;
     border-style:hidden;
     border-radius: 4px;
     transition: background-color 0.3s ease-out 5ms
@@ -216,8 +218,35 @@ input[type=text], input[type=password]  {
         height:100%;
     }
 
+
+    article {
+        height: 100%;
+        width:100%;
+        display:grid;
+        grid-template-columns:auto;
+        justify-content:center;
+        align-items: center;
+    }
+
+    .lang {
+        display:contents;
+        height:100%;
+    }
+
+    .lang p {
+        display:flex;
+        justify-content: flex-end;
+        align-items: flex-end;
+        color:rgb(194, 178, 178);
+        font-size:0.8rem;
+    }
+
     .headliner {
         margin-left: 1.5em;
+    }
+
+    .headliner h3 {
+        color:white;
     }
 
     .underline {
